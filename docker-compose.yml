@@ -11,8 +11,8 @@ services:
     restart: always
     healthcheck:
       start_period: 60s
-      timeout: 3s
-      interval: 15s
+      timeout: 10s
+      interval: 30s
       test: "curl -f http://localhost:8080/api/ || exit 1"
     volumes:
     - ./configuration:/etc/netbox/config:z,ro
@@ -31,8 +31,8 @@ services:
     restart: always
     healthcheck:
       start_period: 20s
-      timeout: 3s
-      interval: 15s
+      timeout: 10s
+      interval: 30s
       test: "ps -aux | grep -v grep | grep -q rqworker || exit 1"
   netbox-housekeeping:
     <<: *netbox
@@ -44,8 +44,8 @@ services:
     restart: always
     healthcheck:
       start_period: 20s
-      timeout: 3s
-      interval: 15s
+      timeout: 10s
+      interval: 30s
       test: "ps -aux | grep -v grep | grep -q housekeeping || exit 1"
 
   # postgres
