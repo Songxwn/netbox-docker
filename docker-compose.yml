@@ -8,6 +8,7 @@ services:
     - redis-cache
     env_file: env/netbox.env
     user: 'unit:root'
+    restart: always
     healthcheck:
       start_period: 60s
       timeout: 3s
@@ -27,6 +28,7 @@ services:
     - /opt/netbox/venv/bin/python
     - /opt/netbox/netbox/manage.py
     - rqworker
+    restart: always
     healthcheck:
       start_period: 20s
       timeout: 3s
@@ -39,6 +41,7 @@ services:
         condition: service_healthy
     command:
     - /opt/netbox/housekeeping.sh
+    restart: always
     healthcheck:
       start_period: 20s
       timeout: 3s
@@ -49,6 +52,7 @@ services:
   postgres:
     image: docker.io/postgres:16-alpine
     env_file: env/postgres.env
+    restart: always
     volumes:
     - netbox-postgres-data:/var/lib/postgresql/data
 
@@ -60,6 +64,7 @@ services:
     - -c # this is to evaluate the $REDIS_PASSWORD from the env
     - redis-server --appendonly yes --requirepass $$REDIS_PASSWORD ## $$ because of docker-compose
     env_file: env/redis.env
+    restart: always
     volumes:
     - netbox-redis-data:/data
   redis-cache:
@@ -69,6 +74,7 @@ services:
     - -c # this is to evaluate the $REDIS_PASSWORD from the env
     - redis-server --requirepass $$REDIS_PASSWORD ## $$ because of docker-compose
     env_file: env/redis-cache.env
+    restart: always
     volumes:
     - netbox-redis-cache-data:/data
 
