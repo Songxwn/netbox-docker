@@ -2,4 +2,4 @@ FROM netboxcommunity/netbox:v4.0-2.9.0
 
 COPY django.po /opt/netbox/netbox/translations/en/LC_MESSAGES/django.po
 COPY django.mo /opt/netbox/netbox/translations/en/LC_MESSAGES/django.mo
-COPY constants.py /opt/netbox/netbox/extras/constants.py 
+COPY constants.py /opt/netbox/netbox/extras/constants.py
