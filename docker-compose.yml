@@ -10,7 +10,7 @@ services:
     restart: always
     healthcheck:
       start_period: 60s
-      timeout: 10s
+      timeout: 60s
       interval: 30s
       test: "curl -f http://localhost:8080/api/ || exit 1"
     volumes:
