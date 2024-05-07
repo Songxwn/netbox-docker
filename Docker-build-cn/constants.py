@@ -23,14 +23,14 @@ DEFAULT_DASHBOARD = [
         'widget': 'extras.BookmarksWidget',
         'width': 4,
         'height': 5,
-        'title': 'Bookmarks',
+        'title': '书签',
         'color': 'orange',
     },
     {
         'widget': 'extras.ObjectCountsWidget',
         'width': 4,
         'height': 2,
-        'title': 'Organization',
+        'title': '组织架构',
         'config': {
             'models': [
                 'dcim.site',
@@ -55,7 +55,7 @@ DEFAULT_DASHBOARD = [
         'widget': 'extras.ObjectCountsWidget',
         'width': 4,
         'height': 3,
-        'title': 'IPAM',
+        'title': 'IP地址管理',
         'config': {
             'models': [
                 'ipam.vrf',
@@ -82,7 +82,7 @@ DEFAULT_DASHBOARD = [
         'widget': 'extras.ObjectCountsWidget',
         'width': 4,
         'height': 3,
-        'title': 'Circuits',
+        'title': '运营商传输线路',
         'config': {
             'models': [
                 'circuits.provider',
@@ -111,7 +111,7 @@ DEFAULT_DASHBOARD = [
         'widget': 'extras.ObjectCountsWidget',
         'width': 4,
         'height': 2,
-        'title': 'Virtualization',
+        'title': '虚拟化',
         'config': {
             'models': [
                 'virtualization.cluster',
@@ -123,7 +123,7 @@ DEFAULT_DASHBOARD = [
         'widget': 'extras.ObjectListWidget',
         'width': 12,
         'height': 5,
-        'title': 'Change Log',
+        'title': '操作日志',
         'color': 'blue',
         'config': {
             'model': 'extras.objectchange',
