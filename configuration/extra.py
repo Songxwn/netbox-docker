@@ -28,6 +28,7 @@
 # }
 
 
+
 ## Remote authentication support
 # REMOTE_AUTH_DEFAULT_PERMISSIONS = {}
 
@@ -48,5 +49,8 @@
 # now = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
 # BANNER_TOP = f'<marquee width="200px">This instance started on {now}.</marquee>'
 ENABLE_LOCALIZATION = True
+
+DEFAULT_LANGUAGE = 'zh-cn'
+
 TIME_ZONE = 'Asia/Shanghai'
 

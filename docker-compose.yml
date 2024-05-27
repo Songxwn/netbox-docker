@@ -1,6 +1,6 @@
 services:
   netbox: &netbox
-    image: docker.io/songxwn/netbox-cn-docker:4.0-2.9.2
+    image: docker.io/songxwn/netbox-cn-docker:4.0.3-2.9.9
     depends_on:
     - postgres
     - redis

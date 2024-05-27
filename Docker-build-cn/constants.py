@@ -70,11 +70,11 @@ DEFAULT_DASHBOARD = [
     {
         'widget': 'extras.RSSFeedWidget',
         'width': 4,
-        'height': 4,
+        'height': 5,
         'title': '个人博客',
         'config': {
             'feed_url': 'https://songxwn.com/atom.xml',
-            'max_entries': 15,
+            'max_entries': 20,
             'cache_timeout': 14400,
         }
     },

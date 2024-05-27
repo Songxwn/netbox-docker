@@ -1,5 +1,17 @@
-FROM netboxcommunity/netbox:v4.0-2.9.0
+FROM netboxcommunity/netbox:v4.0.3
 
-COPY django.po /opt/netbox/netbox/translations/en/LC_MESSAGES/django.po
-COPY django.mo /opt/netbox/netbox/translations/en/LC_MESSAGES/django.mo
-COPY constants.py /opt/netbox/netbox/extras/constants.py
+COPY django.po /opt/netbox/netbox/translations/zh/LC_MESSAGES/django.po
+COPY django.mo /opt/netbox/netbox/translations/zh/LC_MESSAGES/django.mo
+COPY constants.py /opt/netbox/netbox/extras/constants.py 
+
+RUN /opt/netbox/venv/bin/pip install dulwich
+RUN /opt/netbox/venv/bin/pip install netbox-qrcode
+RUN /opt/netbox/venv/bin/pip install netbox-ipcalculator
+
+
+COPY SourceHanSansSC.ttf /opt/netbox/venv/lib/python3.11/site-packages/netbox_qrcode/fonts/SourceHanSansSC.ttf
+
+COPY qrcode3.html /opt/netbox/venv/lib/python3.11/site-packages/netbox_qrcode/templates/netbox_qrcode/qrcode3.html
+
+COPY export.py /opt/netbox/venv/lib/python3.11/site-packages/django_tables2/export/export.py
+

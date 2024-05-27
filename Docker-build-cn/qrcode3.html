@@ -1,0 +1,38 @@
+<div class="card">
+    <h5 class="card-header">
+        二维码
+    </h5>
+    <div class="card-body text-right noprint">
+        <img id="qrcode" src="data:image/png;base64,{{image}}" alt="二维码" />
+    </div>
+    <div class="card-footer text-end noprint">
+        <button onclick="downloadImg('data:image/png;base64,{{image}}')" class="btn btn-xs btn-primary">
+            <span class="mdi mdi-download" aria-hidden="true"></span> 二维码下载
+        </button>
+        <button onclick="printImg()" class="btn btn-xs btn-secondary">
+            <span class="mdi mdi-printer" aria-hidden="true"></span> 二维码打印
+        </button>
+    </div>
+</div>
+
+<script>
+function downloadImg(dataUrl) {
+    const a = document.createElement('a');
+    a.href = dataUrl;
+    a.download = 'qrcode.png';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
+
+function printImg() {
+    const img = document.getElementById('qrcode');
+    const win = window.open('');
+    win.document.write('<html><head><title>Print</title></head><body>');
+    win.document.write(img.outerHTML);
+    win.document.write('</body></html>');
+    win.document.close();
+    win.print();
+    win.close();
+}
+</script>

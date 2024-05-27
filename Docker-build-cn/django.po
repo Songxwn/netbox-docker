@@ -7,9 +7,9 @@
 # Jia Li, 2024
 # cheng bao, 2024
 # YuQi Zhao, 2024
-# su chuandong, 2024
-# Ross Cheung, 2024
+# RossCheung, 2024
 # Songxwn, 2024
+# su chuandong, 2024
 # 
 #, fuzzy
 msgid ""
@@ -18,7 +18,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-06 17:40+0000\n"
 "PO-Revision-Date: 2024-04-11 15:49+0000\n"
-"Last-Translator: Songxwn, 2024\n"
+"Last-Translator: su chuandong, 2024\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/netbox_cn/teams/190814/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1823,7 +1823,7 @@ msgstr "没有找到workers"
 #: core/views.py:454
 #, python-brace-format
 msgid "Job {job_id} not found"
-msgstr ""
+msgstr "任务{job_id} 未发现"
 
 #: dcim/api/serializers_/devices.py:50 dcim/api/serializers_/devicetypes.py:26
 msgid "Position (U)"
@@ -2229,11 +2229,11 @@ msgstr "AS (ID)"
 
 #: dcim/filtersets.py:245
 msgid "Parent location (ID)"
-msgstr ""
+msgstr "父本地位置(ID)"
 
 #: dcim/filtersets.py:251
 msgid "Parent location (slug)"
-msgstr ""
+msgstr "父本地位置(缩写)"
 
 #: dcim/filtersets.py:257 dcim/filtersets.py:333 dcim/filtersets.py:432
 #: dcim/filtersets.py:1005 dcim/filtersets.py:1331 dcim/filtersets.py:2101
@@ -2359,7 +2359,7 @@ msgstr "模块类型（ID）"
 
 #: dcim/filtersets.py:752 dcim/filtersets.py:1514
 msgid "Power port (ID)"
-msgstr ""
+msgstr "电源接口(ID)"
 
 #: dcim/filtersets.py:826 dcim/filtersets.py:1755
 msgid "Parent inventory item (ID)"
@@ -2394,7 +2394,7 @@ msgstr "站点名字 (缩写)"
 
 #: dcim/filtersets.py:1015
 msgid "Parent bay (ID)"
-msgstr ""
+msgstr "父托架(IE)"
 
 #: dcim/filtersets.py:1019
 msgid "VM cluster (ID)"
@@ -2894,7 +2894,7 @@ msgstr "默认系统平台"
 #: dcim/forms/bulk_edit.py:412 dcim/forms/bulk_edit.py:471
 #: dcim/forms/filtersets.py:437 dcim/forms/filtersets.py:557
 msgid "Part number"
-msgstr "零(部)件号"
+msgstr "部件编码(PN)"
 
 #: dcim/forms/bulk_edit.py:416
 msgid "U height"
@@ -3936,27 +3936,27 @@ msgstr "控制台端口模板"
 
 #: dcim/forms/model_forms.py:1040
 msgid "Console server port template"
-msgstr ""
+msgstr "控制口模版"
 
 #: dcim/forms/model_forms.py:1048
 msgid "Front port template"
-msgstr ""
+msgstr "前向端口模版"
 
 #: dcim/forms/model_forms.py:1056
 msgid "Interface template"
-msgstr ""
+msgstr "接口模版"
 
 #: dcim/forms/model_forms.py:1064
 msgid "Power outlet template"
-msgstr ""
+msgstr "电源插座模版"
 
 #: dcim/forms/model_forms.py:1072
 msgid "Power port template"
-msgstr ""
+msgstr "电源接口模版"
 
 #: dcim/forms/model_forms.py:1080
 msgid "Rear port template"
-msgstr ""
+msgstr "后向接口模版"
 
 #: dcim/forms/model_forms.py:1089 dcim/forms/model_forms.py:1332
 #: dcim/forms/model_forms.py:1495 dcim/forms/model_forms.py:1527
@@ -4868,11 +4868,11 @@ msgstr "默认系统平台"
 
 #: dcim/models/devices.py:98 dcim/models/devices.py:386
 msgid "part number"
-msgstr "零(部)件号"
+msgstr "部件编码(PN)"
 
 #: dcim/models/devices.py:101 dcim/models/devices.py:389
 msgid "Discrete part number (optional)"
-msgstr "独立部件编号（可选）"
+msgstr "独立部件编码(PN) (可选)"
 
 #: dcim/models/devices.py:107 dcim/models/racks.py:138
 msgid "height (U)"
@@ -5927,7 +5927,7 @@ msgstr "机柜预留"
 #: dcim/views.py:714 templates/dcim/location.html:90
 #: templates/dcim/site.html:139
 msgid "Non-Racked Devices"
-msgstr "非机架式设备"
+msgstr "未上架设备"
 
 #: dcim/views.py:2035 extras/forms/model_forms.py:456
 #: templates/extras/configcontext.html:10
@@ -6320,7 +6320,7 @@ msgstr "无法导入事件管道 {name}错误: {error}"
 
 #: extras/filtersets.py:45
 msgid "Script module (ID)"
-msgstr ""
+msgstr "脚本模版(ID)"
 
 #: extras/filtersets.py:249 extras/filtersets.py:589 extras/filtersets.py:621
 msgid "Data file (ID)"
@@ -6560,7 +6560,7 @@ msgstr "条目的分类"
 
 #: extras/forms/filtersets.py:49 extras/forms/model_forms.py:47
 msgid "Related object type"
-msgstr ""
+msgstr "连接的对象类型"
 
 #: extras/forms/filtersets.py:54
 msgid "Field type"
@@ -7857,19 +7857,19 @@ msgstr "您的仪表盘已重置。"
 
 #: extras/views.py:935
 msgid "Added widget: "
-msgstr ""
+msgstr "添加小组件:"
 
 #: extras/views.py:976
 msgid "Updated widget: "
-msgstr ""
+msgstr "更新小组件:"
 
 #: extras/views.py:1012
 msgid "Deleted widget: "
-msgstr ""
+msgstr "删除小组件:"
 
 #: extras/views.py:1014
 msgid "Error deleting widget: "
-msgstr ""
+msgstr "删除小组件错误:"
 
 #: extras/views.py:1081
 msgid "Unable to run script: RQ worker process not running."
@@ -7989,7 +7989,7 @@ msgstr "导出 L2VPN"
 
 #: ipam/filtersets.py:125
 msgid "Exporting L2VPN (identifier)"
-msgstr ""
+msgstr "导出L2VPN(标识符)"
 
 #: ipam/filtersets.py:155 ipam/filtersets.py:281 ipam/forms/model_forms.py:227
 #: ipam/tables/ip.py:211 templates/ipam/prefix.html:12
@@ -8080,7 +8080,7 @@ msgstr "已分配"
 
 #: ipam/filtersets.py:668
 msgid "Service (ID)"
-msgstr ""
+msgstr "服务(ID)"
 
 #: ipam/filtersets.py:673
 msgid "NAT inside IP address (ID)"
@@ -9424,7 +9424,7 @@ msgstr "对象类型"
 msgid ""
 "Tag slugs separated by commas, encased with double quotes (e.g. "
 "\"tag1,tag2,tag3\")"
-msgstr ""
+msgstr "用逗号分隔的标签段，用双引号括起来(例如\"tag1,tag2,tag3\")"
 
 #: netbox/forms/base.py:118
 msgid "Add tags"
@@ -9859,11 +9859,11 @@ msgstr "附加实例必须是字典"
 
 #: netbox/preferences.py:19
 msgid "HTMX Navigation"
-msgstr ""
+msgstr "HTMX导航"
 
 #: netbox/preferences.py:24
 msgid "Enable dynamic UI navigation"
-msgstr ""
+msgstr "启用动态UI导航"
 
 #: netbox/preferences.py:29
 msgid "Language"
@@ -9907,7 +9907,7 @@ msgstr "数据格式"
 
 #: netbox/preferences.py:60
 msgid "The preferred syntax for displaying generic data within the UI"
-msgstr ""
+msgstr "在UI中显示通用数据的首选语法"
 
 #: netbox/registry.py:14
 #, python-brace-format
@@ -10471,7 +10471,7 @@ msgstr "默认U位宽度"
 
 #: templates/core/inc/config_data.html:20
 msgid "Power feeds"
-msgstr ""
+msgstr "供电线路"
 
 #: templates/core/inc/config_data.html:23
 msgid "Default voltage"
@@ -10543,15 +10543,15 @@ msgstr "停止"
 
 #: templates/core/rq_task.html:34
 msgid "Requeue"
-msgstr ""
+msgstr "请求"
 
 #: templates/core/rq_task.html:39
 msgid "Enqueue"
-msgstr ""
+msgstr "排队"
 
 #: templates/core/rq_task.html:61
 msgid "Queue"
-msgstr ""
+msgstr "队列"
 
 #: templates/core/rq_task.html:65
 msgid "Timeout"
@@ -10559,23 +10559,23 @@ msgstr "超时"
 
 #: templates/core/rq_task.html:69
 msgid "Result TTL"
-msgstr ""
+msgstr "TTL结果"
 
 #: templates/core/rq_task.html:89
 msgid "Meta"
-msgstr ""
+msgstr "元数据"
 
 #: templates/core/rq_task.html:93
 msgid "Arguments"
-msgstr ""
+msgstr "参数"
 
 #: templates/core/rq_task.html:97
 msgid "Keyword Arguments"
-msgstr ""
+msgstr "关键参数"
 
 #: templates/core/rq_task.html:103
 msgid "Depends on"
-msgstr ""
+msgstr "取决于"
 
 #: templates/core/rq_task.html:109
 msgid "Exception"
@@ -10583,11 +10583,11 @@ msgstr "例外"
 
 #: templates/core/rq_task_list.html:28
 msgid "tasks in "
-msgstr ""
+msgstr "任务进行中"
 
 #: templates/core/rq_task_list.html:33
 msgid "Queued Jobs"
-msgstr ""
+msgstr "排队中的任务"
 
 #: templates/core/rq_task_list.html:64 templates/extras/script_result.html:68
 #, python-format
@@ -10597,7 +10597,7 @@ msgstr "选择 <strong>所有的 %(count)s 个 %(object_type_plural)s</strong>�
 
 #: templates/core/rq_worker.html:10
 msgid "Worker Info"
-msgstr ""
+msgstr "任务信息"
 
 #: templates/core/rq_worker.html:31 templates/core/rq_worker.html:40
 msgid "Worker"
@@ -10605,23 +10605,23 @@ msgstr "Worker"
 
 #: templates/core/rq_worker.html:55
 msgid "Queues"
-msgstr ""
+msgstr "队列"
 
 #: templates/core/rq_worker.html:63
 msgid "Curent Job"
-msgstr ""
+msgstr "当前任务"
 
 #: templates/core/rq_worker.html:67
 msgid "Successful job count"
-msgstr ""
+msgstr "完成的任务数"
 
 #: templates/core/rq_worker.html:71
 msgid "Failed job count"
-msgstr ""
+msgstr "失败的任务数"
 
 #: templates/core/rq_worker.html:75
 msgid "Total working time"
-msgstr ""
+msgstr "任务总计时长"
 
 #: templates/core/rq_worker.html:76
 msgid "seconds"
@@ -10629,11 +10629,11 @@ msgstr "秒"
 
 #: templates/core/rq_worker_list.html:13 templates/core/rq_worker_list.html:21
 msgid "Background Workers"
-msgstr ""
+msgstr "后台任务"
 
 #: templates/core/rq_worker_list.html:27
 msgid "Workers in "
-msgstr ""
+msgstr "工作中"
 
 #: templates/core/system.html:11 utilities/templates/buttons/export.html:4
 msgid "Export"
@@ -10992,7 +10992,7 @@ msgstr "模块名称"
 
 #: templates/dcim/devicetype.html:25 templates/dcim/moduletype.html:22
 msgid "Part Number"
-msgstr "零(部)件号"
+msgstr "部件编码(PN)"
 
 #: templates/dcim/devicetype.html:41
 msgid "Exclude From Utilization"
@@ -11956,11 +11956,12 @@ msgid ""
 "%(parent_obj)s. Please carefully review the %(obj_type_plural)s to be "
 "removed and confirm below."
 msgstr ""
+"以下操作将从%(parent_obj)s中删除%(count)s个%(obj_type_plural)s，请仔细查看要删除的%(obj_type_plural)s，并在下面进行确认。"
 
 #: templates/generic/bulk_remove.html:64
 #, python-format
 msgid "Remove these %(count)s %(obj_type_plural)s"
-msgstr ""
+msgstr "删除%(count)s个 %(obj_type_plural)s"
 
 #: templates/generic/bulk_rename.html:20
 msgid "Renaming"
@@ -12028,6 +12029,8 @@ msgid ""
 "Select <strong>all <span class=\"total-object-count\">%(count)s</span> "
 "%(object_type_plural)s</strong> matching query"
 msgstr ""
+"选择 <strong>所有的 <span class=\"total-object-count\">%(count)s个</span> "
+"%(object_type_plural)s</strong> 查询到的记录"
 
 #: templates/home.html:15
 msgid "New Release Available"
@@ -12405,7 +12408,7 @@ msgstr "标题"
 #: templates/tenancy/contact.html:33 tenancy/forms/bulk_edit.py:104
 #: tenancy/tables/contacts.py:64
 msgid "Phone"
-msgstr "手机"
+msgstr "手机号"
 
 #: templates/tenancy/contact.html:84 tenancy/tables/contacts.py:73
 msgid "Assignments"
@@ -12724,11 +12727,11 @@ msgstr "已失效"
 
 #: tenancy/filtersets.py:29
 msgid "Parent contact group (ID)"
-msgstr ""
+msgstr "父联系人组 (ID)"
 
 #: tenancy/filtersets.py:35
 msgid "Parent contact group (slug)"
-msgstr ""
+msgstr "父联系人组 (缩写)"
 
 #: tenancy/filtersets.py:41 tenancy/filtersets.py:68 tenancy/filtersets.py:111
 msgid "Contact group (ID)"
@@ -12756,7 +12759,7 @@ msgstr "联系人组"
 
 #: tenancy/filtersets.py:170
 msgid "Parent tenant group (ID)"
-msgstr ""
+msgstr "父租户组 (ID)"
 
 #: tenancy/filtersets.py:176
 msgid "Parent tenant group (slug)"
